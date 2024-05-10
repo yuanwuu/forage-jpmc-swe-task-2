@@ -40,10 +40,12 @@ class Graph extends Component<IProps, {}> {
     elem.setAttribute('columns','["top_ask_price"]')
     elem.setAttribute(
       'aggregates',
-      '{"stock":"distinct count",
-      "top_ask_price":"avg",
-      "top_bid_prce":"avg",
-      "timestamp":"distinct count"}'
+      `{
+        "stock": "distinct count",
+        "top_ask_price": "avg",
+        "top_bid_prce": "avg", 
+        "timestamp": "distinct count"
+      }`
     )
 
     const schema = {
